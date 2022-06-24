@@ -8,6 +8,7 @@ const express = require('express');
 const upload = require('express-fileupload');
 const qrimg = require('node-qr-image');
 
+//port request
 const port = 5000;
 var app = express();
 app.set('view engine', 'ejs');``
