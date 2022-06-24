@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>WAB</title>
+</head>
+<body>
+    <div class="container">
+        <% if(!connect){ %>
+            <% if(generated){ %>
+            <img src="/public/temps/<%= temp %>.svg" alt="qrcode">
+            <h5>Wait connection!</h5>
+            <% }else{ %>
+            <div class="container-loader">
+                <div class="loader"></div>
+            </div>
+            <% } %>
+        <% }else{ %>
+        <h5>Connected!</h5>
+        <% } %>
+        <div class="container-btn">
+            <% if(!connect){ %>
+            <button class="right-btn" onclick="window.location.reload()">Regeneration</button>
+            <% } %>
+            <button class="left-btn" onclick="window.location.href='/<%= new Date().getTime() / 1000 %>'">Genereate new qrcode</button>
+        </div>
+    </div>
+</body>
+</html>

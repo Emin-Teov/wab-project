@@ -1,0 +1,92 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 50vw;
+    height: 50vh;
+}
+
+button{
+    width: 20vw;
+    margin: 1vh;
+    height: 5vh;
+    padding: 1em;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 1vmin;
+    border: 0;
+    cursor: pointer;
+}
+
+h5{
+    color: #cde515;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	font-size: 23px;
+}
+
+.container{
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 10px;
+}
+
+.container-btn{
+    display: flex;
+    gap: 4vw;
+    width: 40vw;
+    margin: 0 30vw;
+}
+
+.container-btn button{
+    max-width: 18vw;
+}
+
+.main-btn{
+    background: #08da0f;
+    margin-top: 15vh;
+}
+
+.right-btn{
+    background: #082fda;
+}
+
+.left-btn{
+    background: #f7ea03;
+}
+
+.container-loader{
+    width: 20vw;
+    max-width: 20vw;
+    height: 200px;
+    min-height: 150px;
+    margin-left: 40vw;
+    justify-content: center;
+    display: flex;
+    padding-top: 15px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; 
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
