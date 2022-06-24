@@ -4,8 +4,8 @@
   "description": "WhatsApp bot",
   "main": "index.js",
   "engines": {
-    "node": "14.x",
-    "npm": "8.1.0"
+    "node": "v14.19.3",
+    "npm": "8.5.5"
   },
   "scripts": {
     "start": "node index.js"
